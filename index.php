@@ -57,8 +57,9 @@
 
 <?php 
 
-$command = escapeshellcmd('./test.py');
+$command = escapeshellcmd('python3 sherlock/sherlock test');
 $output = shell_exec($command);
 echo $output;
+echo "test end"
 
 ?>
